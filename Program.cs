@@ -12,25 +12,25 @@ namespace BookQuestions
             int Price = 0;
             Console.WriteLine ("(P)ine, (O)ak, or (M)ahogony");
             string input = Console.ReadLine();
-            if (input == "P")
+            if (input == "P" || input == "p")
             {
                 Price += 100;
-                    Console.Write(Convert.ToInt32(Price));
+                    Console.Write(Price.ToString("C"));
             }
-            else if (input == "O")
+            else if (input == "O" || input == "o")
             {
                 Price += 225;
-                Console.Write(Convert.ToInt32(Price));
+                Console.Write(Price.ToString("C"));
             }
-            else if (input == "M")
+            else if (input == "M"|| input == "m")
             {
                 Price += 310;
-                Console.Write(Convert.ToInt32(Price));
+                Console.Write(Price.ToString("C"));
             }
             else
             {
                 Price += 0;
-                Console.Write(Convert.ToInt32(Price));
+                Console.Write(Price.ToString("C"));
             }
 
         }
